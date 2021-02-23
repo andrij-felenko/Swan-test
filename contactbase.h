@@ -1,8 +1,8 @@
 #ifndef CONTACTBASE_H
 #define CONTACTBASE_H
 
-#include <QString>
-#include <QObject>
+#include <QtCore/QString>
+#include <QtCore/QObject>
 
 class ContactBase : public QObject
 {

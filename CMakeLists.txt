@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.16)
 project(app_swan)
 
 set (swan_src
@@ -12,8 +12,6 @@ set (swan_src
     )
 
 set (CMAKE_AUTORCC ON)
-find_package(Qt5Core)
-find_package(Qt5Qml)
-find_package(Qt5Quick)
+find_package(Qt6 COMPONENTS Core Qml Quick)
 add_executable(app_swan ${swan_src} rc.qrc)
-target_link_libraries(app_swan Qt5::Core Qt5::Quick)
+target_link_libraries(app_swan Qt6::Core Qt6::Quick)
